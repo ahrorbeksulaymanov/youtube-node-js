@@ -13,7 +13,7 @@ router
   router
   .route("/videos/:userId")
   .put(tokenCheck, videoController.PUT)
-  .get(tokenCheck, videoController.GET)
+  .get(videoController.GET)
   .delete(tokenCheck, videoController.DELETE)
 
   router

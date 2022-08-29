@@ -7,7 +7,7 @@ const router = Router();
 
 router
   .route("/videos")
-  .get(tokenCheck, videoController.GET)
+  .get(videoController.GET)
   .post(tokenCheck, videosValidation, videoController.POST)
   
   router

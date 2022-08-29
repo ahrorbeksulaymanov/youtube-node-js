@@ -6,7 +6,7 @@ const router = Router();
 
 router
   .route("/users")
-  .get(tokenCheck, userController.GET)
+  .get( userController.GET)
 
 router
   .route("/users/:id")

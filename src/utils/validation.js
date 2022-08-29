@@ -8,7 +8,7 @@ const loginSchema = Joi.object({
 const registerSchema = Joi.object({
     userName: Joi.string().min(2).max(32).required(),
     password: Joi.string().min(8).required(),
-    image: Joi.string().pattern(new RegExp(/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i)).required()
+    image: Joi.string().pattern(new RegExp(/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i))
 })
 
 const videoSchema = Joi.object({
